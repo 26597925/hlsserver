@@ -1,0 +1,14 @@
+prefix=/home/wenford/vedio/hls/x264-snapshot-20141218-2245
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 56.30.100
+Requires: libavcodec >= 56.35.101, libavutil >= 54.23.101
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lx264 -lfaac -lm -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,1 @@
+int build_ts(const char* buffur, const char* filename);
